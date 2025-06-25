@@ -21,6 +21,9 @@ const config: Config = {
     extend: {
       fontFamily: {
         inika: ["Inika", "serif"],
+        gabarito: ["Gabarito", "sans-serif"],
+        patrick: ["Patrick Hand", "cursive"],
+        cubano: ["Cubano", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",

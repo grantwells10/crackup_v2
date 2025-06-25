@@ -3,41 +3,42 @@ import Image from "next/image"
 
 export default function HeroSection() {
   return (
-    <section className="px-8 py-20 bg-[#FFE196] min-h-[calc(80vh-88px)]">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
-        <div className="lg:w-3/5 mb-12 lg:mb-0 lg:pr-12">
-          <div className="mb-4">
-            <Image
-              src="/headline-text.png"
-              alt="Eggs Finally Got Their Flavor"
-              width={800}
-              height={300}
-              className="w-full max-w-4xl h-auto"
-              priority
-            />
+    <section className="px-8 pt-12 pb-32 bg-[#FFE196] min-h-[calc(80vh-88px)]">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between">
+        <div className="lg:w-3/5 mb-12 lg:mb-0 lg:pr-2 lg:-mr-16">
+          <div className="mb-8">
+            <h1 className="font-gabarito text-5xl lg:text-7xl font-black text-[#341514] leading-tight">
+              EGGS FINALLY GOT<br />
+              THEIR <span className="cursor-pointer inline-block bg-gradient-to-r from-[#341514] to-[#341514] bg-clip-text text-transparent hover:from-[#f2b41c] hover:via-[#ffd700] hover:to-[#ff6b35] hover:bg-[length:200%_100%] transition-all duration-500 hover:[animation:shimmer_1s_ease-in-out_infinite]" style={{ backgroundPosition: '0% 50%' }}>FLAVOR</span>
+            </h1>
           </div>
-          <h2 className="text-3xl lg:text-4xl text-[#f2b41c] font-bold mb-4">Break Your Breakfast Dilemma</h2>
-          <div className="mb-6">
-            <p className="text-[#f2b41c] text-lg font-medium">Your first order</p>
-            <p className="text-[#f2b41c] text-lg font-medium">on us :)</p>
+          <div className="text-left">
+            <h2 className="font-gabarito text-3xl lg:text-4xl text-[#f2b41c] font-bold mb-8">Break Your Breakfast Dilemma</h2>
+            
+            {/* Button and "Your first order" layout */}
+            <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-6">
+              <Button className="bg-[#f2b41c] hover:bg-[#e6a617] text-white font-bold px-16 py-6 rounded-full text-2xl shadow-xl transform hover:scale-105 transition-all duration-200 mb-4 lg:mb-0">
+                Try Now For Free!
+              </Button>
+              
+              <div className="lg:transform lg:rotate-12">
+                <p className="font-patrick text-[#f2b41c] text-2xl font-medium">your first order on us :)</p>
+              </div>
+            </div>
           </div>
-          <Button className="bg-[#f2b41c] hover:bg-[#e6a617] text-[#341514] font-bold px-10 py-4 rounded-full text-xl shadow-xl transform hover:scale-105 transition-all duration-200">
-            Try Now For Free!
-          </Button>
         </div>
 
-        <div className="lg:w-2/5 flex justify-center lg:justify-end">
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-amber-400/20 to-yellow-400/20 rounded-full blur-3xl scale-125 sm:scale-150"></div>
+        <div className="lg:w-2/5 flex justify-center lg:justify-center lg:-ml-8">
+          <div className="relative scale-105 lg:scale-110">
+            <div className="absolute inset-0 bg-gradient-to-r from-amber-400/30 to-yellow-400/30 rounded-full blur-3xl scale-140 lg:scale-160"></div>
             <Image
               src="/product-main-transparent.png"
               alt="Crack'd Up Buttermilk Whole Eggs"
-              width={400}
-              height={500}
-              className="transform rotate-[15deg] hover:rotate-[8deg] transition-transform duration-300"
+              width={450}
+              height={580}
+              className="transform rotate-[8deg] hover:rotate-[4deg] transition-transform duration-300"
               style={{
-                boxShadow: "-25px 4px 4px 0px #00000040",
-                filter: "drop-shadow(0 0 20px rgba(255, 255, 255, 0.8))",
+                filter: "drop-shadow(-15px 8px 8px rgba(0, 0, 0, 0.25)) drop-shadow(0 0 50px rgba(255, 255, 255, 0.9)) drop-shadow(0 0 100px rgba(255, 255, 255, 0.6))",
               }}
             />
           </div>

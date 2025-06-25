@@ -39,19 +39,26 @@ export default function Header() {
   return (
     <>
       {/* Header */}
-      <header className="flex items-center justify-between px-4 sm:px-8 py-6 bg-[#FFF7D5] border-b-2 border-[#341515] sticky top-0 z-50">
-        <div className="flex items-center space-x-12">
-          <Image src="/logo-brown.png" alt="Crack'd Up Logo" width={180} height={60} className="h-12 sm:h-16 w-auto" />
-          <nav className="hidden md:flex space-x-8">
-            <Link href="#flavors" className="text-[#341514] text-lg font-medium hover:text-[#f2b41c] transition-colors">
+      <header className="flex items-center justify-between px-3 sm:px-6 py-0 bg-[#FFF7D5] border-b-4 border-[#341515] sticky top-0 z-50">
+        <div className="flex items-center space-x-8">
+          <Image 
+            src="/logo-brown.png" 
+            alt="Crack'd Up Logo" 
+            width={280} 
+            height={140} 
+            className="h-24 sm:h-28 w-auto cursor-pointer" 
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          />
+          <nav className="hidden md:flex space-x-6">
+            <Link href="#flavors" className="text-[#341514] text-xl font-medium hover:text-[#f2b41c] transition-colors">
               Flavors
             </Link>
-            <Link href="#about" className="text-[#341514] text-lg font-medium hover:text-[#f2b41c] transition-colors">
+            <Link href="#about" className="text-[#341514] text-xl font-medium hover:text-[#f2b41c] transition-colors">
               About Us
             </Link>
           </nav>
         </div>
-        <Button className="hidden md:flex bg-[#f2b41c] hover:bg-[#e6a617] text-[#341514] font-semibold px-8 py-3 rounded-full text-lg shadow-lg items-center justify-center">
+        <Button className="hidden md:flex bg-[#f2b41c] hover:bg-[#e6a617] text-white font-bold px-8 py-5 rounded-full text-xl shadow-lg items-center justify-center">
           Try Now
         </Button>
         <div className="md:hidden">
