@@ -15,6 +15,8 @@ export default function App() {
       <HeroSection />
       <WhatIsSection />
       <FlavorsSection />
+      {/* Gradient transition between flavors and how-to-eat */}
+      <div className="h-16 bg-gradient-to-b from-[#FFF7D5] to-[#FFE196]"></div>
       <HowToEatSection />
       <AboutSection />
       <Footer />

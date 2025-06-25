@@ -27,7 +27,7 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row items-start gap-16">
           {/* Left side - Logo and Social */}
           <div className="lg:w-1/3">
-            <Image src="/logo-brown.png" alt="Crack'd Up Logo" width={280} height={120} className="h-24 w-auto mb-8" />
+          <Image src="/logo-brown-final.svg" alt="Crack'd Up Logo" width={300} height={100} className="py-6"/>
             <div className="flex space-x-4">
               <a
                 href={socialLinks[0].href}
