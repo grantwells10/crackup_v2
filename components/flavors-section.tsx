@@ -4,7 +4,7 @@ import { Mail, Instagram } from "lucide-react"
 
 export default function FlavorsSection() {
   return (
-    <section id="flavors" className="px-8 py-24 bg-[#FFF7D5] scroll-mt-24">
+    <section id="flavors" className="px-8 py-24 bg-[#FFF7D5] scroll-mt-12">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-5xl font-bold text-[#341514] text-center mb-16">The Flavors</h2>
 

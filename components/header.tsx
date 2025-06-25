@@ -56,6 +56,9 @@ export default function Header() {
             <Link href="#about" className="text-[#341514] text-xl font-medium hover:text-[#f2b41c] transition-colors">
               About Us
             </Link>
+            <Link href="#contact" className="text-[#341514] text-xl font-medium hover:text-[#f2b41c] transition-colors">
+              Contact
+            </Link>
           </nav>
         </div>
         <Button className="hidden md:flex bg-[#f2b41c] hover:bg-[#e6a617] text-white font-bold px-8 py-5 rounded-full text-xl shadow-lg items-center justify-center">

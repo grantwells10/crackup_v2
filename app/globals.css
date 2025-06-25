@@ -87,8 +87,44 @@ html {
 }
 
 @layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    background: #FFF7D5;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+  }
+  
   body {
-    @apply bg-background text-foreground;
+    background: #FFF7D5;
     font-family: "Inika", serif;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    @apply text-foreground;
+  }
+  
+  /* Force background on all over-scroll areas */
+  :root {
+    background: #FFF7D5;
+  }
+  
+  /* Create extended background for bottom over-scroll */
+  body::after {
+    content: '';
+    position: fixed;
+    top: 100vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #FFF7D5;
+    z-index: -1;
+    pointer-events: none;
   }
 }
