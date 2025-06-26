@@ -71,7 +71,7 @@ export default function Footer() {
   ]
 
   return (
-    <footer id="contact" className="px-8 py-16 bg-[#FFE196] border-t-2 border-[#341514] scroll-mt-20 md:scroll-mt-16">
+    <footer id="contact" className="px-8 py-16 bg-[#FFE196] border-t-2 border-[#341514] scroll-mt-8 md:scroll-mt-4">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-start gap-16">
           {/* Left side - Logo and Social */}
