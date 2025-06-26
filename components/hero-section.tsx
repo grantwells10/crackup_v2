@@ -34,7 +34,7 @@ export default function HeroSection() {
         <div className="lg:w-2/5 flex justify-center lg:justify-center lg:-ml-8">
           <div className="relative scale-105 lg:scale-110">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-amber-400/20 to-yellow-400/20 rounded-full blur-3xl scale-150"></div>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 md:inset-0 bg-gradient-to-r from-amber-400/20 to-yellow-400/20 rounded-full blur-3xl md:scale-150"></div>
               <Image
                 src="/product-main-transparent.png"
                 alt="Crack'd Up Buttermilk Whole Eggs"
