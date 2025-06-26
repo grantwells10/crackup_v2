@@ -34,16 +34,13 @@ export default function HeroSection() {
         <div className="lg:w-2/5 flex justify-center lg:justify-center lg:-ml-8">
           <div className="relative scale-105 lg:scale-110">
             <div className="relative">
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 md:inset-0 bg-gradient-to-r from-amber-400/20 to-yellow-400/20 rounded-full blur-3xl md:scale-150"></div>
+              <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-amber-400/20 to-yellow-400/20 rounded-full blur-3xl scale-150"></div>
               <Image
                 src="/product-main-transparent.png"
                 alt="Crack'd Up Buttermilk Whole Eggs"
                 width={450}
                 height={580}
-                className="md:transform md:rotate-[8deg] md:hover:rotate-[4deg] md:transition-transform md:duration-300 relative z-10"
-                style={{
-                  filter: "drop-shadow(-15px 8px 8px rgba(0, 0, 0, 0.25)) drop-shadow(0 0 50px rgba(255, 255, 255, 0.9)) drop-shadow(0 0 100px rgba(255, 255, 255, 0.6))",
-                }}
+                className="md:transform md:rotate-[8deg] md:hover:rotate-[4deg] md:transition-transform md:duration-300 relative z-10 hero-image"
               />
             </div>
           </div>
