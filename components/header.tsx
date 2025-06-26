@@ -32,8 +32,24 @@ export default function Header() {
   }
 
   const socialLinks = [
-    { name: "Instagram", href: "https://instagram.com/crackdupfoods", Icon: Instagram },
-    { name: "TikTok", href: "https://tiktok.com/@crackdupfoods", Icon: () => <TikTokIcon size={18} /> },
+    { 
+      name: "Instagram", 
+      href: "https://instagram.com/eatcrackdup", 
+      Icon: () => (
+        <div className="w-8 h-8 bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400 rounded-lg flex items-center justify-center">
+          <Image src="/instagram.svg" alt="Instagram" width={48} height={48} className="w-12 h-12" />
+        </div>
+      )
+    },
+    { 
+      name: "TikTok", 
+      href: "https://tiktok.com/@eatcrackdup", 
+      Icon: () => (
+        <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
+          <TikTokIcon size={16} />
+        </div>
+      )
+    },
   ]
 
   return (
@@ -56,14 +72,19 @@ export default function Header() {
             <Link href="#about" className="text-[#341514] text-xl font-medium hover:text-[#f2b41c] transition-colors">
               About Us
             </Link>
-            <Link href="#contact" className="text-[#341514] text-xl font-medium hover:text-[#f2b41c] transition-colors">
+            <button 
+              onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
+              className="text-[#341514] text-xl font-medium hover:text-[#f2b41c] transition-colors"
+            >
               Contact
-            </Link>
+            </button>
           </nav>
         </div>
-        <Button className="hidden md:flex bg-[#f2b41c] hover:bg-[#e6a617] text-white font-bold px-8 py-5 rounded-full text-xl shadow-lg items-center justify-center">
-          Try Now
-        </Button>
+        <Link href="https://docs.google.com/forms/d/e/1FAIpQLScMaWzO7vhZP0LOXSN2OaopSaE4nHFOfuajGIS80Irz19sefQ/viewform" target="_blank" rel="noopener noreferrer">
+          <Button className="hidden md:flex bg-[#f2b41c] hover:bg-[#e6a617] text-white font-bold px-8 py-5 rounded-full text-xl shadow-lg items-center justify-center">
+            Try Now
+          </Button>
+        </Link>
         <div className="md:hidden">
           <button onClick={toggleMobileMenu} className="text-[#341514] p-2">
             {isMobileMenuOpen ? <XIcon size={28} /> : <MenuIcon size={28} />}
@@ -88,13 +109,15 @@ export default function Header() {
           >
             About Us
           </Link>
-          <Link
-            href="#contact"
-            onClick={closeMobileMenu}
+          <button
+            onClick={() => {
+              window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
+              closeMobileMenu()
+            }}
             className="block text-[#341514] text-xl font-medium hover:text-[#f2b41c] transition-colors py-2"
           >
             Send Us A Message
-          </Link>
+          </button>
           <div>
             <button
               onClick={toggleSocialsMenu}
@@ -122,7 +145,7 @@ export default function Header() {
             )}
           </div>
           <a
-            href="https://forms.gle/your-google-form-link"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScMaWzO7vhZP0LOXSN2OaopSaE4nHFOfuajGIS80Irz19sefQ/viewform"
             target="_blank"
             rel="noopener noreferrer"
             onClick={closeMobileMenu}

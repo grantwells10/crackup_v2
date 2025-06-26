@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function HeroSection() {
   return (
@@ -17,9 +18,11 @@ export default function HeroSection() {
             
             {/* Button and "Your first order" layout */}
             <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-6">
-              <Button className="bg-[#f2b41c] hover:bg-[#e6a617] text-white font-bold px-16 py-6 rounded-full text-2xl shadow-xl transform hover:scale-105 transition-all duration-200 mb-4 lg:mb-0">
-                Try Now For Free!
-              </Button>
+              <Link href="https://docs.google.com/forms/d/e/1FAIpQLScMaWzO7vhZP0LOXSN2OaopSaE4nHFOfuajGIS80Irz19sefQ/viewform" target="_blank" rel="noopener noreferrer">
+                <Button className="bg-[#f2b41c] hover:bg-[#e6a617] text-white font-bold px-16 py-6 rounded-full text-2xl shadow-xl transform hover:scale-105 transition-all duration-200 mb-4 lg:mb-0">
+                  Try Now For Free!
+                </Button>
+              </Link>
               
               <div className="lg:transform lg:rotate-12">
                 <p className="font-patrick text-[#f2b41c] text-2xl font-medium">your first order on us :)</p>

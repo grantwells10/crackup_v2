@@ -1,6 +1,9 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-import { Mail, Instagram } from "lucide-react"
+import { Mail } from "lucide-react"
+import Link from "next/link"
 
 export default function FlavorsSection() {
   return (
@@ -31,8 +34,20 @@ export default function FlavorsSection() {
             <h3 className="text-3xl font-bold text-[#341514] mb-3">Coming Soon</h3>
             <p className="text-[#341514] text-lg mb-4">Message us to be the first to try</p>
             <div className="flex justify-center space-x-4">
-              <Mail className="w-8 h-8 text-[#341514] hover:text-[#f2b41c] cursor-pointer transition-colors" />
-              <Instagram className="w-8 h-8 text-[#f2b41c] hover:text-[#341514] cursor-pointer transition-colors" />
+              <button
+                onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
+                className="cursor-pointer"
+              >
+                <Mail className="w-12 h-12 text-[#341514] hover:text-[#f2b41c] transition-colors" />
+              </button>
+              <a
+                href="https://instagram.com/eatcrackdup"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer hover:scale-105 transition-transform"
+              >
+                <Image src="/instagram.svg" alt="Instagram" width={48} height={48} className="w-12 h-12" />
+              </a>
             </div>
           </div>
 
@@ -60,9 +75,11 @@ export default function FlavorsSection() {
               <br />
               -- but still eggs
             </p>
-            <Button className="bg-[#f2b41c] hover:bg-[#e6a617] text-[#341514] font-bold px-8 py-3 rounded-full text-lg shadow-lg text-white">
-              Try Now!
-            </Button>
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLScMaWzO7vhZP0LOXSN2OaopSaE4nHFOfuajGIS80Irz19sefQ/viewform" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-[#f2b41c] hover:bg-[#e6a617] text-[#341514] font-bold px-8 py-3 rounded-full text-lg shadow-lg text-white">
+                Try Now!
+              </Button>
+            </Link>
           </div>
 
           {/* Coming Soon - Right */}
@@ -88,8 +105,20 @@ export default function FlavorsSection() {
             <h3 className="text-3xl font-bold text-[#341514] mb-3">Coming Soon</h3>
             <p className="text-[#341514] text-lg mb-4">Message us to be the first to try</p>
             <div className="flex justify-center space-x-4">
-              <Mail className="w-8 h-8 text-[#341514] hover:text-[#f2b41c] cursor-pointer transition-colors" />
-              <Instagram className="w-8 h-8 text-[#f2b41c] hover:text-[#341514] cursor-pointer transition-colors" />
+              <button
+                onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
+                className="cursor-pointer"
+              >
+                <Mail className="w-12 h-12 text-[#341514] hover:text-[#f2b41c] transition-colors" />
+              </button>
+              <a
+                href="https://instagram.com/eatcrackdup"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer hover:scale-105 transition-transform"
+              >
+                <Image src="/instagram.svg" alt="Instagram" width={48} height={48} className="w-12 h-12" />
+              </a>
             </div>
           </div>
         </div>

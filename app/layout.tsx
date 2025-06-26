@@ -6,7 +6,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Crack'd Up - Flavored Liquid Eggs",
+  title: "Crack'd Up",
   description: "The first line of flavor-infused whole liquid eggs",
 }
 
