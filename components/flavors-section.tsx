@@ -4,12 +4,12 @@ import { Mail, Instagram } from "lucide-react"
 
 export default function FlavorsSection() {
   return (
-    <section id="flavors" className="px-8 py-24 bg-[#FFF7D5] scroll-mt-11">
+    <section id="flavors" className="px-8 py-24 bg-[#FFF7D5] lg:scroll-mt-11 scroll-mt-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-5xl lg:text-6xl font-bold text-[#341514] text-center mb-16">The Flavors</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {/* Coming Soon - Left */}
-          <div className="text-center">
+          <div className="text-center order-2 md:order-1">
             <div
               className="rounded-2xl p-8 mb-6 h-80 flex items-center justify-center relative overflow-hidden"
               style={{ backgroundColor: "#C07029" }}
@@ -37,7 +37,7 @@ export default function FlavorsSection() {
           </div>
 
           {/* Buttermilk - Center */}
-          <div className="text-center">
+          <div className="text-center order-1 md:order-2">
             <div className="bg-[#FFE196] rounded-2xl p-8 mb-6 h-80 flex items-center justify-center">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-amber-400/20 to-yellow-400/20 rounded-full blur-3xl scale-150"></div>
@@ -66,7 +66,7 @@ export default function FlavorsSection() {
           </div>
 
           {/* Coming Soon - Right */}
-          <div className="text-center">
+          <div className="text-center order-3 md:order-3">
             <div
               className="rounded-2xl p-8 mb-6 h-80 flex items-center justify-center relative overflow-hidden"
               style={{ backgroundColor: "#C95C5A" }}
