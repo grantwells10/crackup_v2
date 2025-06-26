@@ -21,10 +21,10 @@ export default function AboutSection() {
               <p className="text-3xl text-[#f2b41c] font-medium">Aiden & Nik</p>
             </div>
             <p className="text-xl text-[#341514] leading-relaxed">
-              Born from two best friends who are always cracking up, Crack'd Up started in our college kitchen when we
-              couldn't find a breakfast that was quick, healthy, and actually tasted good. So we made our own. Combining
+              Born from two best friends who are always cracking up, Crack&apos;d Up started in our college kitchen when we
+              couldn&apos;t find a breakfast that was quick, healthy, and actually tasted good. So we made our own. Combining
               real ingredients with whole eggs to create classic yet bold flavors that are easy to cook and impossible
-              to forget. From late-night snacks to early-morning scrambles, we're building something that brings the fun
+              to forget. From late-night snacks to early-morning scrambles, we&apos;re building something that brings the fun
               and flavor back to eggs.
             </p>
           </div>

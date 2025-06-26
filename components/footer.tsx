@@ -3,7 +3,7 @@
 import React, { useState } from "react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-import { Instagram, CheckCircle, X } from "lucide-react"
+import { CheckCircle, X } from "lucide-react"
 
 const TikTokIcon = ({ size = 18 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none">

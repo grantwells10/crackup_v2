@@ -14,12 +14,12 @@ export default function HowToEatSection() {
                 <Image src="/egg-icon.png" alt="Egg Icon" width={150} height={150} />
               </div>
               <h2 className="text-5xl lg:text-6xl font-bold text-[#341514] mb-8 font-londrina">
-                How Do I Eat Crack'd Up?
+                How Do I Eat Crack&apos;d Up?
               </h2>
             </div>
             <p className="text-2xl text-[#341514] leading-relaxed">
-              Scramble it up like you normally would, but don't expect normal eggs. In just 3 minutes on the stove,
-              you'll have rich, fluffy eggs bursting with bold, unexpected flavor. Put it in a breakfast burrito, on a
+              Scramble it up like you normally would, but don&apos;t expect normal eggs. In just 3 minutes on the stove,
+              you&apos;ll have rich, fluffy eggs bursting with bold, unexpected flavor. Put it in a breakfast burrito, on a
               bagel, or eat it straight off the plate.
             </p>
           </div>

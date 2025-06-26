@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
-import { Instagram, MenuIcon, XIcon, ChevronDown, ChevronUp } from "lucide-react"
+import { MenuIcon, XIcon, ChevronDown, ChevronUp } from "lucide-react"
 
 const TikTokIcon = ({ size = 18 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
