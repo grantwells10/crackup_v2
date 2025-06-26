@@ -31,7 +31,7 @@ export default function Footer() {
     
     const form = event.target as HTMLFormElement
     const formData = new FormData(form)
-    formData.append("access_key", "2e87e554-3dbc-4d87-9288-f91009b14c89")
+    formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY!)
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
