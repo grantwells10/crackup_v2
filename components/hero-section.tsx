@@ -10,7 +10,7 @@ export default function HeroSection() {
           <div className="mb-8">
             <h1 className="font-gabarito text-5xl lg:text-7xl font-black text-[#341514] leading-tight">
               EGGS FINALLY GOT<br />
-              THEIR <span className="cursor-pointer inline-block bg-gradient-to-r from-[#341514] to-[#341514] bg-clip-text text-transparent hover:from-[#f2b41c] hover:via-[#ffd700] hover:to-[#ff6b35] hover:bg-[length:200%_100%] transition-all duration-500 hover:[animation:shimmer_1s_ease-in-out_infinite]" style={{ backgroundPosition: '0% 50%' }}>FLAVOR</span>
+              THEIR <span className="cursor-pointer inline-block bg-gradient-to-r from-[#341514] to-[#341514] bg-clip-text text-transparent md:hover:from-[#f2b41c] md:hover:via-[#ffd700] md:hover:to-[#ff6b35] md:hover:bg-[length:200%_100%] md:transition-all md:duration-500 md:hover:[animation:shimmer_1s_ease-in-out_infinite]" style={{ backgroundPosition: '0% 50%' }}>FLAVOR</span>
             </h1>
           </div>
           <div className="text-left">
@@ -19,7 +19,7 @@ export default function HeroSection() {
             {/* Button and "Your first order" layout */}
             <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-6">
               <Link href="https://docs.google.com/forms/d/e/1FAIpQLScMaWzO7vhZP0LOXSN2OaopSaE4nHFOfuajGIS80Irz19sefQ/viewform" target="_blank" rel="noopener noreferrer">
-                <Button className="bg-[#f2b41c] hover:bg-[#e6a617] text-white font-bold px-16 py-6 rounded-full text-2xl shadow-xl transform hover:scale-105 transition-all duration-200 mb-4 lg:mb-0">
+                <Button className="bg-[#f2b41c] hover:bg-[#e6a617] text-white font-bold px-16 py-6 rounded-full text-2xl shadow-xl md:transform md:hover:scale-105 md:transition-all md:duration-200 mb-4 lg:mb-0">
                   Try Now For Free!
                 </Button>
               </Link>
@@ -33,15 +33,15 @@ export default function HeroSection() {
 
         <div className="lg:w-2/5 flex justify-center lg:justify-center lg:-ml-8">
           <div className="relative scale-105 lg:scale-110">
-            <div className="absolute inset-0 bg-gradient-to-r from-amber-400/30 to-yellow-400/30 rounded-full blur-3xl scale-140 lg:scale-160"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-amber-400/20 to-yellow-400/20 rounded-full blur-xl scale-110 md:blur-3xl md:scale-140 lg:scale-160 md:from-amber-400/30 md:to-yellow-400/30"></div>
             <Image
               src="/product-main-transparent.png"
               alt="Crack'd Up Buttermilk Whole Eggs"
               width={450}
               height={580}
-              className="transform rotate-[8deg] hover:rotate-[4deg] transition-transform duration-300"
+              className="md:transform md:rotate-[8deg] md:hover:rotate-[4deg] md:transition-transform md:duration-300"
               style={{
-                filter: "drop-shadow(-15px 8px 8px rgba(0, 0, 0, 0.25)) drop-shadow(0 0 50px rgba(255, 255, 255, 0.9)) drop-shadow(0 0 100px rgba(255, 255, 255, 0.6))",
+                filter: "drop-shadow(-8px 4px 4px rgba(0, 0, 0, 0.15))",
               }}
             />
           </div>

@@ -34,12 +34,9 @@ export default function FlavorsSection() {
             <h3 className="text-3xl font-bold text-[#341514] mb-3">Coming Soon</h3>
             <p className="text-[#341514] text-lg mb-4">Message us to be the first to try</p>
             <div className="flex justify-center space-x-4">
-              <button
-                onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
-                className="cursor-pointer"
-              >
+              <a href="#contact" className="cursor-pointer">
                 <Mail className="w-12 h-12 text-[#341514] hover:text-[#f2b41c] transition-colors" />
-              </button>
+              </a>
               <a
                 href="https://instagram.com/eatcrackdup"
                 target="_blank"
@@ -105,12 +102,9 @@ export default function FlavorsSection() {
             <h3 className="text-3xl font-bold text-[#341514] mb-3">Coming Soon</h3>
             <p className="text-[#341514] text-lg mb-4">Message us to be the first to try</p>
             <div className="flex justify-center space-x-4">
-              <button
-                onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
-                className="cursor-pointer"
-              >
+              <a href="#contact" className="cursor-pointer">
                 <Mail className="w-12 h-12 text-[#341514] hover:text-[#f2b41c] transition-colors" />
-              </button>
+              </a>
               <a
                 href="https://instagram.com/eatcrackdup"
                 target="_blank"

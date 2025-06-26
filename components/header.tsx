@@ -72,12 +72,9 @@ export default function Header() {
             <Link href="#about" className="text-[#341514] text-xl font-medium hover:text-[#f2b41c] transition-colors">
               About Us
             </Link>
-            <button 
-              onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
-              className="text-[#341514] text-xl font-medium hover:text-[#f2b41c] transition-colors"
-            >
+            <Link href="#contact" className="text-[#341514] text-xl font-medium hover:text-[#f2b41c] transition-colors">
               Contact
-            </button>
+            </Link>
           </nav>
         </div>
         <Link href="https://docs.google.com/forms/d/e/1FAIpQLScMaWzO7vhZP0LOXSN2OaopSaE4nHFOfuajGIS80Irz19sefQ/viewform" target="_blank" rel="noopener noreferrer">
@@ -109,15 +106,13 @@ export default function Header() {
           >
             About Us
           </Link>
-          <button
-            onClick={() => {
-              window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
-              closeMobileMenu()
-            }}
+          <Link
+            href="#contact"
+            onClick={closeMobileMenu}
             className="block text-[#341514] text-xl font-medium hover:text-[#f2b41c] transition-colors py-2"
           >
             Send Us A Message
-          </button>
+          </Link>
           <div>
             <button
               onClick={toggleSocialsMenu}
