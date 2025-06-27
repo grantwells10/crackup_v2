@@ -23,10 +23,6 @@ export default function HeroSection() {
                   Try Now For Free!
                 </Button>
               </Link>
-              
-              <div className="lg:transform lg:rotate-12">
-                <p className="font-patrick text-[#f2b41c] text-2xl font-medium">your first order on us :)</p>
-              </div>
             </div>
           </div>
         </div>
