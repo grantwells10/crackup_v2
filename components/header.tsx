@@ -77,11 +77,18 @@ export default function Header() {
             </Link>
           </nav>
         </div>
-        <Link href="https://docs.google.com/forms/d/e/1FAIpQLScMaWzO7vhZP0LOXSN2OaopSaE4nHFOfuajGIS80Irz19sefQ/viewform" target="_blank" rel="noopener noreferrer">
-          <Button className="hidden md:flex bg-[#f2b41c] hover:bg-[#e6a617] text-white font-bold px-8 py-5 rounded-full text-xl shadow-lg items-center justify-center">
-            Try Now
-          </Button>
-        </Link>
+        <div className="hidden md:flex space-x-4">
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSea84CezsXINbiznYd8Ursh-6kiu8Qha7p9N0yPhxQGCLzh8A/viewform?usp=header" target="_blank" rel="noopener noreferrer">
+            <Button className="bg-[#341515] hover:bg-[#2a1212] text-white font-bold px-6 py-5 rounded-full text-xl shadow-lg">
+              Feedback
+            </Button>
+          </Link>
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLScMaWzO7vhZP0LOXSN2OaopSaE4nHFOfuajGIS80Irz19sefQ/viewform" target="_blank" rel="noopener noreferrer">
+            <Button className="bg-[#f2b41c] hover:bg-[#e6a617] text-white font-bold px-8 py-5 rounded-full text-xl shadow-lg">
+              Try Now
+            </Button>
+          </Link>
+        </div>
         <div className="md:hidden">
           <button onClick={toggleMobileMenu} className="text-[#341514] p-2">
             {isMobileMenuOpen ? <XIcon size={28} /> : <MenuIcon size={28} />}
@@ -139,6 +146,15 @@ export default function Header() {
               </div>
             )}
           </div>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSea84CezsXINbiznYd8Ursh-6kiu8Qha7p9N0yPhxQGCLzh8A/viewform?usp=header"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={closeMobileMenu}
+            className="block bg-[#341515] hover:bg-[#2a1212] text-white text-center font-semibold px-8 py-4 rounded-full text-xl shadow-lg"
+          >
+            Feedback
+          </a>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLScMaWzO7vhZP0LOXSN2OaopSaE4nHFOfuajGIS80Irz19sefQ/viewform"
             target="_blank"
