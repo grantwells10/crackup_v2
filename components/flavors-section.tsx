@@ -12,7 +12,7 @@ export default function FlavorsSection() {
         <div className="grid md:grid-cols-3 gap-8">
           {/* French Toast - Left */}
           <div className="text-center order-2 md:order-1">
-            <div className="bg-[#FFE196] rounded-2xl p-8 mb-6 h-80 flex items-center justify-center">
+            <div className="bg-[#C07029] rounded-2xl p-8 mb-6 h-80 flex items-center justify-center">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-amber-400/20 to-yellow-400/20 rounded-full blur-3xl scale-150"></div>
                 <Image
@@ -46,8 +46,8 @@ export default function FlavorsSection() {
                 <Image
                   src="/product-main-transparent.png"
                   alt="Buttermilk Flavor"
-                  width={250}
-                  height={375}
+                  width={230}
+                  height={345}
                   className="transform hover:scale-105 transition-transform duration-300 relative z-10"
                   style={{
                     filter: "drop-shadow(0 0 40px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 80px rgba(255, 255, 255, 0.4))",
@@ -71,7 +71,7 @@ export default function FlavorsSection() {
 
           {/* Chipotle - Right */}
           <div className="text-center order-2 md:order-2">
-            <div className="bg-[#FFE196] rounded-2xl p-8 mb-6 h-80 flex items-center justify-center">
+            <div className="bg-[#C95C5A] rounded-2xl p-8 mb-6 h-80 flex items-center justify-center">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-amber-400/20 to-yellow-400/20 rounded-full blur-3xl scale-150"></div>
                 <Image
