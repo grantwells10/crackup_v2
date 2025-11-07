@@ -87,7 +87,7 @@ export default function FlavorsSection() {
               </div>
             </div>
             <h3 className="text-3xl font-bold text-[#341514] mb-3">Chipotle</h3>
-            <p className="text-[#341514] text-lg mb-4">Our first savory flavory. A smokey kick with a hint of lime.</p>
+            <p className="text-[#341514] text-lg mb-4">Our first savory flavor. A smokey kick with a hint of lime.</p>
             <Link href="https://docs.google.com/forms/d/e/1FAIpQLScMaWzO7vhZP0LOXSN2OaopSaE4nHFOfuajGIS80Irz19sefQ/viewform" target="_blank" rel="noopener noreferrer">
               <Button className="bg-[#f2b41c] hover:bg-[#e6a617] text-[#341514] font-bold px-8 py-3 rounded-full text-lg shadow-lg text-white">
                 Try Now!
